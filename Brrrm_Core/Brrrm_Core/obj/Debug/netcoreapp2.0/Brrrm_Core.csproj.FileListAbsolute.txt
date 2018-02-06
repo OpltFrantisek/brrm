@@ -1,0 +1,11 @@
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\bin\Debug\netcoreapp2.0\Brrrm_Core.deps.json
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\bin\Debug\netcoreapp2.0\Brrrm_Core.runtimeconfig.json
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\bin\Debug\netcoreapp2.0\Brrrm_Core.runtimeconfig.dev.json
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\bin\Debug\netcoreapp2.0\Brrrm_Core.dll
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\bin\Debug\netcoreapp2.0\Brrrm_Core.pdb
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.csprojResolveAssemblyReference.cache
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.csproj.CoreCompileInputs.cache
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.AssemblyInfoInputs.cache
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.AssemblyInfo.cs
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.dll
+C:\Users\Fafik\source\repos\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp2.0\Brrrm_Core.pdb
