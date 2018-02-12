@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fafik\\source\\repos\\Brrrm_Core\\Brrrm_Core\\Brrrm_Core.csproj",
+      "projectUniqueName": "Y:\\source\\brrm\\Brrrm_Core\\Brrrm_Core\\Brrrm_Core.csproj",
       "projectName": "Brrrm_Core",
-      "projectPath": "C:\\Users\\Fafik\\source\\repos\\Brrrm_Core\\Brrrm_Core\\Brrrm_Core.csproj",
+      "projectPath": "Y:\\source\\brrm\\Brrrm_Core\\Brrrm_Core\\Brrrm_Core.csproj",
       "packagesPath": "C:\\Users\\Fafik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fafik\\source\\repos\\Brrrm_Core\\Brrrm_Core\\obj\\",
+      "outputPath": "Y:\\source\\brrm\\Brrrm_Core\\Brrrm_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

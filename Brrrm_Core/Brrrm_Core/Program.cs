@@ -11,6 +11,7 @@ namespace Brrrm_Core
             Console.WriteLine("Hello World!");
             Core c = new Core();
             c.LoadConfig("666");
+            c.Parser("blbec");
             Console.ReadKey();
         }
 

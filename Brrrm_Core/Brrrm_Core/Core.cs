@@ -17,11 +17,20 @@ namespace Brrrm_Core
         public Block(string name){
             this.Name = name;
         }
+        public void Add(string name,double value)
+        {
+            if (columms.Keys.Contains(name))
+                columms[name].Add(value);
+            else
+                columms.Add(name, new List<double>() { value});
+            
+        }
  
     }
     class Core
     {
-        Dictionary<string, List<string>> colummns_Names = new Dictionary<string, List<string>>();
+        List<Block> blocks = new List<Block>();
+        Dictionary<int, List<string>> colummns_Names = new Dictionary<int, List<string>>();
         private bool config = false;
         public void LoadConfig(string path)
         {
@@ -33,7 +42,7 @@ namespace Brrrm_Core
                     return;             
                 bool cont = false;
                 string[] data = new string[1];
-                string name = "neco";
+                int name = -1;
                 int pocet = -1;
                 bool end = false;
                 while (true)
@@ -47,9 +56,9 @@ namespace Brrrm_Core
                     switch (data[0])
                     {
                         case "Name":
-                            if (!colummns_Names.ContainsKey(data[1]))
+                            if (!colummns_Names.ContainsKey(int.Parse(data[1])))
                             {
-                                name = data[1];
+                                name = int.Parse(data[1]);
                                 colummns_Names.Add(name, new List<string>());
                             }                              
                         ; break;
@@ -86,23 +95,64 @@ namespace Brrrm_Core
 
                 }
 
-            }
-            Console.ReadKey();
+            }      
         }
-        public  Dictionary<string,List<double>> Parser(string path)
+        public  List<Block> Parser(string path)
         {
-            path = @"D:\MSB.csv";
+            path = @"D:\vento.LOG";
             List<string> names = new List<string>();
             using(TextReader tx = new StreamReader(path))
             {
                 for (int i = 0; i < 5; i++)
-                    tx.ReadLine();    
-                
+                    tx.ReadLine();
+                string line;
+                while ((line = tx.ReadLine()) != null)
+                {
+                    var neco = line.Split("BL:");
+                    string[] sloupce;
+                    for (int i = 1; i < neco.Length; i++)
+                    {
+
+                        sloupce = neco[i].Split("   ");
+                        string number;
+                        if (i == 1)
+                            number = sloupce[0];
+                        else
+                            number = sloupce[0].Split("  ")[0];
+                        var block = (from x in blocks where x.Name == number select x).ToArray();
+                        Block bc = block.Count() == 0 ? new Block(number) : block[0];
+
+                        for (int j = 1; j < sloupce.Length; j++)
+                        {
+                            if (sloupce[j] == "" || sloupce[j] == "  ")
+                            {
+                                j = int.MaxValue - 1;
+                                continue;
+                            }
+
+                            string name = colummns_Names[int.Parse(number)][j - 1];
+                            string[] v = sloupce[j].Split(" ");
+                            double value;
+                            if (v.Count() > 2)
+                                value = double.Parse(v[v.Count()-2]);
+                            else
+                                value = double.Parse(v[0]);
+                            bc.Add(name, value);
+                        }
+                        if (block.Count() == 0)
+                            blocks.Add(bc);
+
+
+                    }
+
+                 
+                }
+                return blocks;
             }
           
          
 
-            return null;
+          
 
         }
         private static  char Nevim(ref bool first, char rtrn)
