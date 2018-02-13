@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace Brrrm_Core
 {
-    class Block
+   public class Block
     {
         public string Name { get; private set; }
         public List<string> time = new List<string>();

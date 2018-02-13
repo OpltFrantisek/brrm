@@ -1,0 +1,9 @@
+Y:\source\brrm\Brrrm_Core\Brrrm\bin\Debug\netstandard2.0\Brrrm.deps.json
+Y:\source\brrm\Brrrm_Core\Brrrm\bin\Debug\netstandard2.0\Brrrm.dll
+Y:\source\brrm\Brrrm_Core\Brrrm\bin\Debug\netstandard2.0\Brrrm.pdb
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.csprojResolveAssemblyReference.cache
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.csproj.CoreCompileInputs.cache
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.AssemblyInfoInputs.cache
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.AssemblyInfo.cs
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.dll
+Y:\source\brrm\Brrrm_Core\Brrrm\obj\Debug\netstandard2.0\Brrrm.pdb

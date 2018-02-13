@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Brrrm;
 
 namespace Brrm_GUI
 {
@@ -23,6 +24,9 @@ namespace Brrm_GUI
         public MainWindow()
         {
             InitializeComponent();
+            Core core = new Core();
+            core.LoadConfig("config");
+            var neco = core.Parser("data");
         }
     }
 }

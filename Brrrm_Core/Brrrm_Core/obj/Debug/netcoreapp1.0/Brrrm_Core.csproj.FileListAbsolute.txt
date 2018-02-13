@@ -1,0 +1,3 @@
+Y:\source\brrm\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp1.0\Brrrm_Core.csproj.CoreCompileInputs.cache
+Y:\source\brrm\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp1.0\Brrrm_Core.AssemblyInfoInputs.cache
+Y:\source\brrm\Brrrm_Core\Brrrm_Core\obj\Debug\netcoreapp1.0\Brrrm_Core.AssemblyInfo.cs
