@@ -16,7 +16,7 @@ namespace Brrrm
         private bool config = false;
         public void LoadConfig(string path)
         {
-            path = @"D:\config.neco";
+           // path = @"D:\config.neco";
             using (TextReader tx = new StreamReader(path))
             {
                 string line = tx.ReadLine();
@@ -81,7 +81,7 @@ namespace Brrrm
         }
         public List<Block> Parser(string path)
         {
-            path = @"D:\vento.LOG";
+           // path = @"D:\vento.LOG";
             List<string> names = new List<string>();
             using (TextReader tx = new StreamReader(path))
             {

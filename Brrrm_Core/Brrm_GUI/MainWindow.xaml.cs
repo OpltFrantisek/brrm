@@ -26,8 +26,8 @@ namespace Brrm_GUI
         {
             InitializeComponent();
             Core core = new Core();
-            core.LoadConfig("config");
-            var neco = core.Parser("data");
+            core.LoadConfig(@"D:\config.neco");
+            var neco = core.Parser(@"D:\vento.LOG");
             StringBuilder sb = new StringBuilder();
             foreach(var item in neco)
             {
