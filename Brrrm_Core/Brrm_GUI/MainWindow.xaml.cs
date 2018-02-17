@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,22 @@ namespace Brrm_GUI
             Core core = new Core();
             core.LoadConfig("config");
             var neco = core.Parser("data");
+            StringBuilder sb = new StringBuilder();
+            foreach(var item in neco)
+            {
+                
+                Debug.Print(item.Name);
+                sb.AppendLine(item.Name); // číslo bloku
+                foreach(var i in item.columms)
+                {
+                    sb.Append(i.Key+" => "); // název sloupce
+                    foreach (var c in i.Value)
+                        sb.Append(c + "   "); // data
+                    sb.AppendLine();
+                }
+                
+            }
+            tbSettingText.Text = sb.ToString();
         }
     }
 }
